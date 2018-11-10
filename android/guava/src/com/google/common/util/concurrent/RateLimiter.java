@@ -20,7 +20,6 @@ import static java.lang.Math.max;
 import static java.util.concurrent.TimeUnit.MICROSECONDS;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
-import com.google.common.annotations.Beta;
 import com.google.common.annotations.GwtIncompatible;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Stopwatch;
@@ -90,7 +89,6 @@ import org.checkerframework.checker.nullness.compatqual.MonotonicNonNullDecl;
  */
 // TODO(user): switch to nano precision. A natural unit of cost is "bytes", and a micro precision
 // would mean a maximum rate of "1MB/s", which might be small in some cases.
-@Beta
 @GwtIncompatible
 @SuppressWarnings("GoodTime") // lots of violations - also how should we model a rate?
 public abstract class RateLimiter {
